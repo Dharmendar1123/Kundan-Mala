@@ -1,0 +1,281 @@
+/* Top Bar */
+
+.top-bar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    letter-spacing: 2px;
+  }
+  .cart {
+    background-color: #BA8B39;
+    color: white;
+}
+.phone {
+    margin-left: 60px;
+}
+  
+.top-bar a {
+    float: left;
+    padding: 12px;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .top-bar a:hover {
+    background-color: rgb(175, 175, 175);
+  }
+  .top-right {
+      float: right;
+      padding: 0 40px;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .top-bar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  /* Logo and Search */
+
+.logo {
+    padding: 10px 70px;
+    width: 20%;
+}
+.logo-search {
+    background-image: url('./images/background-pattern.png');
+}
+.Search {
+    background-color: #BA8B39;
+    padding: 7px;
+    color: white;
+    width: 60px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    
+}
+.search-bar {
+    position: absolute;
+    right: 40px;
+    top: 130px;
+    border: 0;
+}
+.search-bar input {
+    border: 1px solid #d6d4d4;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+    overflow: hidden;
+    background-color: #BA8B39;
+}
+.nav-bar a {
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    
+}
+.nav-bar a:hover {
+    background-color: rgb(196, 21, 21);
+}
+
+
+/* Products */
+
+.products {
+    background-color: #EDEDED;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    justify-items: center;
+    padding-top: 20px;
+    background-image: url('./images/background-pattern.png');
+    
+}
+.pendant {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.ring {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.earring {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.nosering {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.discount {
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+.bangels {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.necklaces {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.magalsutra {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.pendant-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.ring-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.earring-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.nosering-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.discount-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.bangels-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.necklaces-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.magalsutra-text {
+    position: relative;
+    text-align: center;
+    bottom: 100px;
+    padding: 10px;
+}
+.pro {
+    background-color: white;
+    opacity: 75%;
+}
+
+/* Catalogue */
+.catalogue-box {
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 20px auto;
+}
+.catalogue-img {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-bottom: 40px;
+}
+.cat-text {
+    background-color: #BA8B39;
+    color: white;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+/* Advertisement and Testimonials */
+
+.advertise {
+    background-image: url('./images/background-pattern.png');
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 20px;
+}
+.test-slide {
+    text-align: center;
+    padding: 20px 50px;
+    background-image: url('./images/diamond-pattern.png');
+    background-color: #FFFAF7;
+}
+.arrow {
+    color: black;
+}
+.heading {
+    color: #BA8B39;
+    padding-bottom: 40px;
+}
+.comment {
+    padding-bottom: 20px;
+}
+.review {
+    margin: 0 300px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.name {
+    color: #7D1935;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #BA8B39;
+    color: white;
+    padding: 30px;
+}
+.quick-link {
+    grid-column: 1/2;
+}
+.working {
+    grid-column: 2/3;
+}
+.working img {
+    padding: 3px;
+}
+
+.fb-page {
+    grid-column: 3/4;
+    padding-top: 40px;
+}
+
+/* Rights and Payment */
+ 
+.rights {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+.payment {
+    float: right;
+}
+
