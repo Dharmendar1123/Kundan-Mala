@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./images/background-pattern.png');
+}
+
 /* Top Bar */
 
 .top-bar {
@@ -31,12 +38,7 @@
   }
   
   
-  @media screen and (max-width: 500px) {
-    .top-bar a {
-      float: none;
-      display: block;
-    }
-  }
+
 
   /* Logo and Search */
 
@@ -45,11 +47,12 @@
     width: 20%;
 }
 .logo-search {
-    background-image: url('./images/background-pattern.png');
+    /* background-image: url('./images/background-pattern.png'); */
+    overflow: hidden;
 }
 .Search {
     background-color: #BA8B39;
-    padding: 7px;
+    padding: 10px;
     color: white;
     width: 60px;
     text-align: center;
@@ -58,19 +61,23 @@
 }
 .search-bar {
     position: absolute;
-    right: 40px;
-    top: 130px;
+    right: 5%;
+    top: 18%;
     border: 0;
 }
 .search-bar input {
     border: 1px solid #d6d4d4;
+    margin-right: 0px !important;
 }
 
 /* Nav Bar */
 
 .nav-bar {
     overflow: hidden;
-    background-color: #BA8B39;
+    background-color: #BA8B39 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 .nav-bar a {
     color: white;
@@ -79,13 +86,11 @@
     padding: 14px 25px;
     text-decoration: none;
     font-size: 20px;
-    margin: 0 auto;
-    
+    margin: 0 10px;
 }
 .nav-bar a:hover {
     background-color: rgb(196, 21, 21);
-}
-
+} 
 
 /* Products */
 
@@ -97,12 +102,15 @@
     grid-row-gap: 15px;
     justify-items: center;
     padding-top: 20px;
-    background-image: url('./images/background-pattern.png');
-    
+    /* background-image: url('./images/background-pattern.png'); */
+    /* margin: 0 40px; */
 }
 .pendant {
     grid-row: 1/2;
     grid-column: 1/2;
+}
+.product-img {
+    width: 480px;
 }
 .ring {
     grid-row: 1/2;
@@ -115,22 +123,31 @@
 .nosering {
     grid-row: 2/3;
     grid-column: 1/2;
+    margin-top: -50px;
 }
 .discount {
     grid-row: 2/3;
     grid-column: 2/4;
 }
+.dis-img {
+    width: 990px;
+    height: 480px;
+    margin-top: -50px;
+}
 .bangels {
     grid-row: 3/4;
     grid-column: 1/2;
+    margin-top: -100px;
 }
 .necklaces {
     grid-row: 3/4;
     grid-column: 2/3;
+    margin-top: -100px;
 }
 .magalsutra {
     grid-row: 3/4;
     grid-column: 3/4;
+    margin-top: -100px;
 }
 
 .pendant-text {
@@ -187,6 +204,12 @@
 }
 
 /* Catalogue */
+.catalogue {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: -140px;
+}
 .catalogue-box {
     border: 2px solid black;
     width: 200px;
@@ -199,7 +222,10 @@
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding-bottom: 40px;
+    margin: 0 40px;
+}
+.catalogue-img img {
+    width: 330px; 
 }
 .cat-text {
     background-color: #BA8B39;
@@ -211,18 +237,25 @@
 /* Advertisement and Testimonials */
 
 .advertise {
-    background-image: url('./images/background-pattern.png');
+    /* background-image: url('./images/background-pattern.png'); */
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     padding: 20px;
+    margin: 0 20px;
+}
+.advertise img {
+    width: 700px;
 }
 .test-slide {
     text-align: center;
     padding: 20px 50px;
     background-image: url('./images/diamond-pattern.png');
     background-color: #FFFAF7;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
 }
 .arrow {
     color: black;
@@ -235,8 +268,8 @@
     padding-bottom: 20px;
 }
 .review {
-    margin: 0 300px;
-    padding-bottom: 30px;
+    margin: 0 370px;
+    padding-bottom: 20px;
     font-size: 18px;
 }
 .name {
@@ -265,7 +298,9 @@
 
 .fb-page {
     grid-column: 3/4;
-    padding-top: 40px;
+}
+.fb-page img {
+    height: 250px;
 }
 
 /* Rights and Payment */
@@ -279,3 +314,50 @@
     float: right;
 }
 
+/* Top Bar media */
+
+@media screen and (max-width: 500px) {
+    .top-bar a {
+      float: none;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 1150px) {
+    .nav-bar {
+        display: inline-flex;
+        width: 100%;
+    }
+    .nav-bar a {
+        font-size: 15px; 
+    }
+    .cat-text {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 985px) {
+    .nav-bar a {
+        font-size: 14px; 
+    }
+}
+@media screen and (max-width: 1320px) {
+    .review {
+        margin: 0 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .review {
+        margin: 0 130px;
+    }
+    .search-bar {
+        position: absolute;
+        right: 5%;
+        top: 15%;
+        border: 0;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .review {
+        margin: 0 150px;
+    }
+}
