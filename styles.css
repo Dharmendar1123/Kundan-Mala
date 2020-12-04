@@ -310,7 +310,14 @@ body {
     float: right;
 }
 
-/* Top Bar media */
+/* Media Query */
+
+@media screen and (max-width: 425px) {
+    .products {
+        display: inline-block;
+        justify-items: center;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .top-bar a {
@@ -336,6 +343,7 @@ body {
         font-size: 14px; 
     }
 }
+
 @media screen and (max-width: 1320px) {
     .review {
         margin: 0 300px;
